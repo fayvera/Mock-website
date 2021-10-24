@@ -1,9 +1,19 @@
 .navbar{
-    justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+    background: linear-gradient(90deg, rgb(110, 94, 254)0%, rgba(73,63,252,1));
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    height: 60px;
+    position: relative;
 }
 
-.navbar h1 {
-    background-color: red;
+.navbar-main{
+    display:inline;
+}
+.svg-links {
+    display: inline; 
+    justify-content: flex-end;
+    font-size: 1.2rem;
+
 }
