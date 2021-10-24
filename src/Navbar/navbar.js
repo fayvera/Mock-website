@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import './navbar.css'
 import {items} from './nav_Items'
 import { Link } from "react-router-dom";
+import {connect} from 'react-redux'
+import { withRouter} from "react-router";
 
 
 class Navbar extends Component{ 
@@ -34,10 +36,10 @@ class Navbar extends Component{
         return(
             <nav class="navbar">
                 <div class="navbar-main">
-                    <a href="/">Home</a>
-                    <a href='/about'>About</a>
-                    <a href='/portfolio'>Portfolio</a>
-                    <a href="/contact">Contact</a>
+                    <a href="/">HOME</a>
+                    <a href='/about'>ABOUT</a>
+                    <a href='/portfolio'>PORTFOLIO</a>
+                    <a href="/contact">CONTACT</a>
                 </div>
                 <div class="navbar-items">
                     {this.handleMenu()}
@@ -47,6 +49,6 @@ class Navbar extends Component{
     }
 }
 
-export default Navbar;
+export default withRouter(connect(null)(Navbar));
 
 

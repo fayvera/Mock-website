@@ -2,7 +2,7 @@
     align-items: center;
     background: linear-gradient(90deg, rgb(110, 94, 254)0%, rgba(73,63,252,1));
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-size: 1.2rem;
     height: 60px;
     position: relative;
@@ -10,6 +10,9 @@
 
 .navbar-main{
     display:inline;
+    justify-content: space-around;
+    align-items: center;
+
 }
 .svg-links {
     display: inline; 
