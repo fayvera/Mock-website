@@ -18,24 +18,26 @@ class Navbar extends Component{
 
 
     handleMenu = () => {
-        {items.map((item, index) => {
-            <src key={index} onClick={this.handleClick}>
-                <Link classname={item.cname} to={item.url}>
-                    {item.title}
-                </Link>
-            </src>
-        }
-    )}
-}
+        items.map((item, index) => {
+            return(
+                <src key={index} onClick={this.handleClick}>
+                    <Link classname={item.cname} to={item.url}>
+                        {item.title}
+                    </Link>
+                </src>
+            )
+        })
+    }
 
 
     render(){
         return(
             <nav class="navbar">
                 <div class="navbar-main">
-                    <a>Home</a>
-                    <a>About</a>
-                    <a>Contact</a>
+                    <a href="/">Home</a>
+                    <a href='/about'>About</a>
+                    <a href='/portfolio'>Portfolio</a>
+                    <a href="/contact">Contact</a>
                 </div>
                 <div class="navbar-items">
                     {this.handleMenu()}
