@@ -15,6 +15,10 @@ class Home extends Component{
             <div class='main-home-div'>
                 <h1>HEY!</h1>
 
+                <h1>I'M <span id="intro"> FAY VERA</span></h1>
+
+                <h1>SOFTWARE ENGINEER</h1>
+                <h2>NEW YORK, NY</h2>
             </div>
         )
     }
