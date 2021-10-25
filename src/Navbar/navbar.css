@@ -1,8 +1,8 @@
 .navbar{
     align-items: center;
-    background: linear-gradient(90deg, rgb(110, 94, 254)0%, rgba(73,63,252,1));
+    /* background: linear-gradient(90deg, rgb(110, 94, 254)0%, rgba(73,63,252,1)); */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 1.2rem;
     height: 60px;
     position: relative;
@@ -10,19 +10,32 @@
 
 .navbar-main{
     display:inline;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-
+}
+.navbar-main a{
+    align-items: center;
+    margin: 20px;
+    color: #f8f2ff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .svg-links {
     display: inline; 
     justify-content: flex-end;
     font-size: 1.2rem;
+}
+.navbar i{
+    margin: 3px;
+    color: #f8f2ff;
+    align-items: center;
+    size: 80px;
+    height: 1rem;
+    font-size: 2.8rem;
 
 }
-
 .navbar-items{
     justify-content: flex-end;
     align-items: center;
     display: flex;
+    margin: 20px;
 }
