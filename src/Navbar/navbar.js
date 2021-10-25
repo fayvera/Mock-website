@@ -39,7 +39,6 @@ class Navbar extends Component{
                     <a href="/">HOME</a>
                     <a href='/about'>ABOUT</a>
                     <a href='/portfolio'>PORTFOLIO</a>
-                    <a href="/contact">CONTACT</a>
                 </div>
                 <div class="navbar-items">
                     {this.handleMenu}
