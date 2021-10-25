@@ -42,7 +42,17 @@ class Navbar extends Component{
                     <a href="/contact">CONTACT</a>
                 </div>
                 <div class="navbar-items">
-                    {this.handleMenu()}
+                    {this.handleMenu}
+                    {items.map((item, index) =>{
+                        return(
+                            <src key={index} onClick={this.handleClick}>
+                            <Link classname={item.cname} to={item.url}>
+                                {item.picture}
+                            </Link>
+                        </src>
+                        )
+                    }
+                    )}
                 </div>
             </nav>
         )

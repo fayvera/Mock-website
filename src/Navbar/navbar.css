@@ -20,3 +20,9 @@
     font-size: 1.2rem;
 
 }
+
+.navbar-items{
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
