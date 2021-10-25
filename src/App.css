@@ -41,3 +41,9 @@
     transform: rotate(360deg);
   }
 }
+
+.main-home-div {
+  padding: 40px;
+  margin: 50px;
+  justify-content: flex-start;
+}
