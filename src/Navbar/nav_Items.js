@@ -18,3 +18,22 @@ export const items = [
         picture: <i class="fab fa-linkedin"></i>
     }
 ]
+
+
+export const pages = [
+    {
+        title: "Home",
+        url: '/',
+        cname: "pages-button",
+    },
+    {
+        title: "About",
+        url: '/about',
+        cname: "pages-button",
+    },
+    {
+        title: "Portfolio",
+        url: '/portfolio',
+        cname: "pages-button",
+    }
+]

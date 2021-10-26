@@ -12,13 +12,14 @@ class Navbar extends Component{
     constructor(){
         super();
         this.state = {
-            clicked: false
+            path: ''
         }
     }
 
-    handleClick = () => {
-        // debugger
-        this.setState({ clicked: !this.state.clicked })
+    handleClick = (e) => {
+        e.preventDefault()
+        debugger
+        this.setState({ path: e.target })
     }
 
 
@@ -39,7 +40,7 @@ class Navbar extends Component{
     render(){
         return(
             <nav class="navbar">
-                <div class="navbar-main" onClick={this.handleClick}>
+                <div class="navbar-main" onClick={e => this.handleClick(e)}>
                     <Link to="/">HOME </Link>
                     <Link to="/about"> ABOUT </Link>
                     {/* <a href='/about'>ABOUT</a> */}
