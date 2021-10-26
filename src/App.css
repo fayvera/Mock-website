@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   /* margin: 20px; */
   font-family: 'Signika', sans-serif;
 }
@@ -47,16 +47,29 @@
   padding: 40px;
   margin: 50px;
   justify-content: flex-start;
+  display: inline;
+  align-items: flex-start;
 
 }
-.main-home-div h1{
+.greeting{
   justify-content: flex-start;
   padding: 40px;
-  font-size: 50px;
-
+  font-size: 30px;
+  /* display: table-caption; */
 }
 
 #intro{
   color:whitesmoke;
   outline: black;
+}
+
+#location{
+  justify-content: flex-end;
+  text-align: right;
+  align-items: flex-end;
+  /* display: flex; */
+  font-size: 15px;
+  float: inline-end;
+  margin-right: 20px;
+  margin-top: 40px;
 }

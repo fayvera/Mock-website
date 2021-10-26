@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-// import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom'
 import { createStore, compose, applyMiddleware } from 'redux';
 import {composeWithDevTools} from 'redux-devtools-extension'
 import thunk from 'redux-thunk';
+import Navbar from './Navbar/navbar';
 import reducer from './reducer/index'
 
 const store = createStore(reducer, compose(applyMiddleware(thunk), composeWithDevTools()))
@@ -15,7 +15,10 @@ const store = createStore(reducer, compose(applyMiddleware(thunk), composeWithDe
 ReactDOM.render(
   <Provider store={store}>
     <Router > 
-      <App />
+      {/* <Navbar /> */}
+      <div className="main-container"> 
+        <App />
+      </div>
     </Router>
   </Provider>,
   document.getElementById('root')

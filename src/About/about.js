@@ -7,7 +7,7 @@ class About extends Component{
     constructor(){
         super();
         this.state = {
-            clicked: false
+            // clicked: false
         }
     }
 

@@ -6,19 +6,22 @@ class Home extends Component{
     constructor(){
         super();
         this.state = {
-            clicked: false
+            // clicked: false
         }
     }
 
     render(){
         return (
             <div class='main-home-div'>
-                <h1>HEY!</h1>
-
-                <h1>I'M <span id="intro"> FAY VERA</span></h1>
-
-                <h1>SOFTWARE ENGINEER</h1>
-                <h2>NEW YORK, NY</h2>
+                <div id="location">
+                    <h1>SOFTWARE ENGINEER</h1>
+                    <h4>NEW YORK, NY</h4>
+                </div>
+                {/* <hr/> */}
+                <div class="greeting">
+                    <h1>HEY!</h1>
+                    <h1>I'M <span id="intro"> FAY VERA</span></h1>
+                </div>
             </div>
         )
     }

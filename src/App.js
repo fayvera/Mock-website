@@ -1,17 +1,17 @@
 // import logo from './logo.svg';
 import './App.css';
-import Navbar from './Navbar/navbar'
+import Navbar from './Navbar/navbar' 
 import React from 'react';
 import Home from './Home'
 import About from './About/about'
-import Portfolio from './Portfolio/portfolio'
+import Portfolio from './Portfolio/portfolio';
 import { Route, Switch } from 'react-router';
 
 class App extends React.Component{
   render(){
     return( 
     <div className="App">
-      <Navbar />
+      <Navbar/>
       <Switch>
           <Route path='/' component={Home}/>
           <Route path='/about' component={About}/>
