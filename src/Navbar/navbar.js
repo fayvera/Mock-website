@@ -2,8 +2,10 @@ import React, {Component} from 'react';
 import './navbar.css'
 import {items} from './nav_Items'
 import { Link } from "react-router-dom";
-import {connect} from 'react-redux'
-import { withRouter } from "react-router";
+// import {connect} from 'react-redux'
+// import { withRouter } from "react-router";
+
+
 
 
 class Navbar extends Component{ 
@@ -62,6 +64,6 @@ class Navbar extends Component{
     }
 }
 
-export default withRouter(connect(null)(Navbar));
+export default Navbar;
 
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from "react-router";
 
 class Portfolio extends Component{
     constructor(){
@@ -17,4 +18,4 @@ class Portfolio extends Component{
     }
 }
 
-export default Portfolio
+export default withRouter(Portfolio);
