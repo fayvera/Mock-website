@@ -1,0 +1,12 @@
+.main-about-div{
+    margin: 20px;
+    padding: 30px;
+}
+
+
+#about-me{
+    /* padding-left: 40px; */
+    align-self: center;
+    display: grid;
+    justify-content: center;
+}
