@@ -15,10 +15,7 @@ const store = createStore(reducer, compose(applyMiddleware(thunk), composeWithDe
 ReactDOM.render(
   <Provider store={store}>
     <Router > 
-      {/* <Navbar /> */}
-      <div className="main-container"> 
         <App />
-      </div>
     </Router>
   </Provider>,
   document.getElementById('root')

@@ -22,17 +22,17 @@ export const items = [
 
 export const pages = [
     {
-        title: "Home",
+        title: "HOME",
         url: '/',
         cname: "pages-button",
     },
     {
-        title: "About",
+        title: "ABOUT",
         url: '/about',
         cname: "pages-button",
     },
     {
-        title: "Portfolio",
+        title: "PORTFOLIO",
         url: '/portfolio',
         cname: "pages-button",
     }

@@ -14,13 +14,20 @@
     align-items: center;
     font-family: 'Balsamiq Sans';
 }
-.navbar-main a{
+.pages-button {
     font-family: 'Comfortaa';
     align-items: center;
-    margin: 30px;
+    margin: 20px;
+    font-size: 20px;
     color: #f8f2ffe3;
     font-family: 'Balsamiq Sans';
+    text-decoration: none;
 }
+
+.pages-button a:active{
+    text-decoration: underline;
+}
+
 .svg-links {
     display: inline; 
     justify-content: flex-end;
