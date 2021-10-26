@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './navbar.css'
 import {items, pages} from './nav_Items'
 import { Link } from "react-router-dom";
-import {connect} from 'react-redux'
+// import {connect} from 'react-redux'
 // import { withRouter } from "react-router";
 
 
@@ -11,27 +11,13 @@ import {connect} from 'react-redux'
 class Navbar extends Component{ 
     constructor(){
         super();
-        this.state = {
-            path: ''
-        }
+        this.state = {}
     }
 
-    handleClick = (e) => {
-        e.preventDefault()
-        debugger
-        this.setState({ path: e.target.href })
-    }
-
-    // handlePages = () => {
-    //     pages.map((page, index) => {
-    //         return(
-    //             <src key={index} onClick={e => this.handleClick(e)}>
-    //                 <Link className={page.cname} to={page.url}>
-    //                     {page.title}
-    //                 </Link>
-    //             </src>
-    //         )   
-    //     })
+    // handleClick = (e) => {
+    //     e.preventDefault()
+    //     // debugger
+    //     this.setState({ path: e.target.href })
     // }
 
     // handleMenu = () => {
@@ -50,10 +36,10 @@ class Navbar extends Component{
     render(){
         return(
             <nav class="navbar">
-                <div class="navbar-main" onClick={e => this.handleClick(e)}>
+                <div class="navbar-main" >
                     {pages.map((page, index) => {
                         return(
-                            <src key={index} onClick={e => this.handleClick(e)}>
+                            <src key={index} >
                                 <Link className={page.cname} to={page.url}>
                                     {page.title}
                                 </Link>
@@ -63,10 +49,9 @@ class Navbar extends Component{
                     }
                 </div>
                 <div class="navbar-items">
-                    {/* {this.handleMenu} */}
                     {items.map((item, index) =>{
                         return(
-                            <src key={index} onClick={ e => this.handleClick(e)}>
+                            <src key={index} >
                             <Link classname={item.cname} to={item.url}>
                                 {item.picture}
                             </Link>
@@ -80,12 +65,7 @@ class Navbar extends Component{
     }
 }
 
-const mapStateToProps = state => {
-    return{
-        path: state
-    }
-}
 
-export default connect(mapStateToProps)(Navbar);
+export default Navbar;
 
 

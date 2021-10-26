@@ -14,6 +14,8 @@ class App extends React.Component{
       <Navbar/>
       <Switch>
           <Route exact path='/' component={Home}/>
+          {/* needs exact path otherwise react will assume anything with 
+          a forward slash is a match */}
           <Route path='/about' component={About}/>
           <Route path='/portfolio' component={Portfolio}/>
       </Switch>
