@@ -1,7 +1,7 @@
 export const items = [
     {
         title: "Email",
-        url: "/email",
+        url: "mailto:fayverawright@gmail.com",
         cname: 'svg-links',
         picture: <i class="fas fa-envelope"></i>
     },
@@ -13,7 +13,7 @@ export const items = [
     },
     {
         title: "LinkedIn",
-        url: "/linkedin",
+        url: "https://www.linkedin.com/in/fay-vera/",
         cname: 'svg-links',
         picture: <i class="fab fa-linkedin"></i>
     }

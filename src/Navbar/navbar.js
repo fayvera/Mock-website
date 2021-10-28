@@ -14,18 +14,6 @@ class Navbar extends Component{
         this.state = {}
     }
 
-    // handleMenu = () => {
-    //     items.map((item, index) => {
-    //         return(
-    //             <src key={index} onClick={e => this.handleClick(e)}>
-    //                 <Link classname={item.cname} to={item.url}>
-    //                     {item.title}
-    //                 </Link>
-    //             </src>
-    //         )
-    //     })
-    // }
-
 
     render(){
         return(
