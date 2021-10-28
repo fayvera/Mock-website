@@ -7,7 +7,7 @@ export const items = [
     },
     {
         title: "GitHub",
-        url: "/github",
+        url: "https://github.com/fayvera",
         cname: "svg-links",
         picture: <i class="fab fa-git-square"></i>
     },

@@ -14,13 +14,6 @@ class Navbar extends Component{
         this.state = {}
     }
 
-    handleClick = (e) => {
-        e.preventDefault()
-        debugger
-        
-        this.setState({ path: e.target.href })
-    }
-
     // handleMenu = () => {
     //     items.map((item, index) => {
     //         return(
@@ -53,7 +46,11 @@ class Navbar extends Component{
                     {items.map((item, index) =>{
                         return(
                             <src key={index} >
-                            <Link classname={item.cname} onClick={e => this.handleClick(e)}>
+                            <Link classname={item.cname} onClick={(e) => {
+                                e.preventDefault()
+                                window.open(item.url)
+                                }
+                            }>
                                 {item.picture}
                             </Link>
                         </src>
