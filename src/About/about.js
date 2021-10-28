@@ -19,11 +19,13 @@ class About extends Component{
                 <h1>About Me!</h1>
                 <p id="about-me">
                     <h3>Ruby </h3>
-                        <h3>Ruby on Rails</h3>
+                    <h3>Ruby on Rails</h3>
+                    <h3>JavaScript</h3>    
                     <h3>React</h3>
                     <h3>Redux</h3>
                     <h3>HTML</h3>
-                    <h3>CSS</h3>                     
+                    <h3>CSS</h3>
+                    <h3>SQLite3</h3>                     
                 </p>    
             </div>
         )

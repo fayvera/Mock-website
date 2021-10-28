@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from "react-router";
+import '../stylesheets/portfolio.css'
 
 class Portfolio extends Component{
     constructor(){

@@ -1,0 +1,8 @@
+.main-portfolio-div {
+    padding: 40px;
+    margin: 50px;
+    justify-content: flex-start;
+    display: inline;
+    align-items: flex-start;
+  
+  }
