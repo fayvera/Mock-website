@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from "react-router";
 import '../stylesheets/portfolio.css'
+import { projects } from './portfolioItems'
 
 class Portfolio extends Component{
     constructor(){
@@ -15,10 +16,14 @@ class Portfolio extends Component{
             <div class="main-portfolio-div">
                 <h1>PORTFOLIO</h1>
                 <div id="project-container">
-                    <div class="single-project-container">
-                        <h3 class="project-title">Brewery Locator</h3>
-                        <h4>Brewery Locator where users can search beer-related establishments by location.</h4>
-                    </div>
+                    {projects.map((project, index) => {
+                        return(
+                            <div class="single-project-container">
+                                <h3 class='project-title' key={index}>{project.title}</h3>
+                                <h4>{project.description}</h4>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
         )
