@@ -5,3 +5,26 @@
     align-items: flex-start;
   
   }
+
+  #project-container{
+    justify-content: flex-start;
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.208);
+    width: 50rem;
+    align-items: stretch;
+    border-radius: 3px;
+    padding: 20px;
+  }
+
+  .single-project-container{
+    border-radius: 4px;
+    background-color: rgba(252, 253, 255, 0.79) ;
+    margin: 30px;
+    padding: 2px;
+    width: 15rem;
+  }
+
+  .project-title{
+    font-weight: bold;
+    flex-wrap: wrap;
+  }
