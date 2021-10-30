@@ -12,8 +12,11 @@ class Portfolio extends Component{
 
     render(){
         return(
-            <div className="main-portfolio-div">
+            <div class="main-portfolio-div">
                 <h1>PORTFOLIO</h1>
+                <div id="project-container">
+                    Here will be all the projects
+                </div>
             </div>
         )
     }
