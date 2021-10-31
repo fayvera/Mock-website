@@ -18,10 +18,11 @@
 
   .single-project-container{
     border-radius: 6px;
-    background-color: rgba(252, 253, 255, 0.79) ;
+    background-color: rgba(252, 253, 255, 0.41) ;
     margin: 30px;
     padding: 2px;
-    width: 15rem;
+    width: 18rem;
+    cursor: pointer;
   }
 
   .project-title{

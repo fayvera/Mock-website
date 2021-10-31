@@ -13,7 +13,9 @@ class Portfolio extends Component{
 
     handleClick = (e) => {
         e.preventDefault()
-        
+        debugger
+        debugger
+        this.state.clicked === true ? this.setState({clicked: false}) : this.setState({clicked: true})
     }
 
     render(){
@@ -23,8 +25,8 @@ class Portfolio extends Component{
                 <div id="project-container">
                     {projects.map((project, index) => {
                         return(
-                            <div class="single-project-container">
-                                <h3 class='project-title' key={index}>{project.title}</h3>
+                            <div class="single-project-container" onClick={e => this.handleClick(e)}>
+                                <h2 class='project-title' key={index}>{project.title}</h2>
                                 <h4>{project.description}</h4>
                             </div>
                         )
@@ -34,5 +36,4 @@ class Portfolio extends Component{
         )
     }
 }
-
 export default withRouter(Portfolio);
