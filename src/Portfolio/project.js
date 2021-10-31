@@ -1,5 +1,6 @@
 import React, { Component } from 'react' 
 import { projects } from './portfolioItems'
+import '../stylesheets/portfolio.css'
 
 
 class Project extends Component{
@@ -12,9 +13,10 @@ class Project extends Component{
 
     handleClick = (e) => {
         e.preventDefault()
+        this.setState({
+            clicked: !this.state.clicked
+        })
         debugger
-        debugger
-        this.state.clicked === true ? this.setState({clicked: false}) : this.setState({clicked: true})
     }
 
     render(){
@@ -22,7 +24,7 @@ class Project extends Component{
             <div id="project-container">
                 {projects.map((project, index) => {
                     return(
-                        <div class="single-project-container" onClick={e => this.handleClick(e)}>
+                        <div class="single-project-container" onClick={e => this.handleClick(e).bind(this)}>
                             <h2 class='project-title' key={index}>{project.title}</h2>
                             <h4>{project.description}</h4>
                         </div>

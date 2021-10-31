@@ -20,12 +20,15 @@
     border-radius: 6px;
     background-color: rgba(252, 253, 255, 0.41) ;
     margin: 30px;
-    padding: 2px;
+    padding: 7px;
     width: 18rem;
     cursor: pointer;
+    justify-content: center;
+
   }
 
   .project-title{
     font-weight: bold;
     flex-wrap: wrap;
+    justify-content: center;
   }
