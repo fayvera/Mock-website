@@ -11,6 +11,11 @@ class Portfolio extends Component{
         }
     }   
 
+    handleClick = (e) => {
+        e.preventDefault()
+        
+    }
+
     render(){
         return(
             <div class="main-portfolio-div">

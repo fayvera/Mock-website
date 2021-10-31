@@ -7,17 +7,17 @@
   }
 
   #project-container{
-    justify-content: flex-start;
+    display: flex;  
+    flex-flow: row wrap;
+    justify-content: space-around;
     margin: 30px;
     background-color: rgba(255, 255, 255, 0.208);
-    width: 50rem;
-    align-items: stretch;
     border-radius: 3px;
     padding: 20px;
   }
 
   .single-project-container{
-    border-radius: 4px;
+    border-radius: 6px;
     background-color: rgba(252, 253, 255, 0.79) ;
     margin: 30px;
     padding: 2px;
