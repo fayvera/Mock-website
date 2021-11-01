@@ -16,8 +16,8 @@ class About extends Component{
     render(){
         return(
             <div className="main-about-div">
-                <h1>About Me!</h1>
-                <p id="about-me">
+                <h1>Skills</h1>
+                <p class="about-me">
                     <h3>Ruby </h3>
                     <h3>Ruby on Rails</h3>
                     <h3>JavaScript</h3>    
@@ -27,6 +27,13 @@ class About extends Component{
                     <h3>CSS</h3>
                     <h3>SQLite3</h3>                     
                 </p>    
+                <br/>
+                <h1>Soft Skills</h1>
+                <p class="about-me">
+                    <h3>Standards-Driven</h3>
+                    <h3>Great Communitcator</h3>
+                    <h3>Goal-Oriented</h3>
+                </p>
             </div>
         )
     }
