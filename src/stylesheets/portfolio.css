@@ -44,7 +44,7 @@
     z-index: 10;
   } */
 
-  .nav-menu.active {
+  .project-menu.active {
       background: #6668f4;
       left: 0;
       opacity: 1;

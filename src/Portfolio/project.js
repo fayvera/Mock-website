@@ -16,20 +16,27 @@ class Project extends Component{
         this.setState({
             clicked: !this.state.clicked
         })
-        debugger
+        return(
+            <div class={this.state.clicked ? "project-menu.active" : "not-active"}>
+                <h2>{this.title}</h2>
+            </div>
+        )
     }
 
     render(){
         return(
             <div id="project-container">
                 {projects.map((project, index) => {
-                    return(
-                        <div class="single-project-container" onClick={e => this.handleClick(e).bind(this)}>
+                    return(                        
+                        <div class="single-project-container" onClick={e => this.handleClick(e)}>
                             <h2 class='project-title' key={index}>{project.title}</h2>
                             <h4>{project.description}</h4>
                         </div>
                     )
                 })}
+                {/* <div class="open-menu">
+                    <h2>{}</h2>
+                </div> */}
             </div>
         )
     }
